@@ -116,7 +116,7 @@ export default async function handler(req, res) {
           action: switchMenu('サービス一覧', SERVICES_ALIAS, 'switch-to-services')
         },
         {
-          bounds: { x: 650, y: 20, width: 1200, height: 260 },
+          bounds: { x: 350, y: 20, width: 1800, height: 260 },
           action: uri('ホーム', 'URL_HOME')
         },
         {
@@ -181,7 +181,7 @@ export default async function handler(req, res) {
         action: uri('HEY HATCH', 'URL_HOME')
         },
         {
-        bounds: { x:2140, y:1520, width:250, height:166 },
+        bounds: { x:2050, y:1520, width:250, height:166 },
         action: uri('Instagram', 'URL_INSTAGRAM')
         }
       ]
