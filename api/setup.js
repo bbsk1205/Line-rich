@@ -63,7 +63,7 @@ async function uploadImage(richMenuId, imageUrl) {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${required('LINE_CHANNEL_ACCESS_TOKEN')}`,
-      'content-type': 'image/png'
+      'content-type': 'image/jpg'
     },
     body: bytes
   });
@@ -170,8 +170,8 @@ export default async function handler(req, res) {
     const homeId = await createMenu(homeMenu);
     const servicesId = await createMenu(servicesMenu);
 
-    await uploadImage(homeId, `${origin}/menu-home.png`);
-    await uploadImage(servicesId, `${origin}/menu-services.png`);
+    await uploadImage(homeId, `${origin}/menu-home.jpg`);
+    await uploadImage(servicesId, `${origin}/menu-services.jpg`);
 
     await lineFetch('/v2/bot/richmenu/alias', {
       method: 'POST',
