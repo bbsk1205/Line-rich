@@ -63,7 +63,7 @@ async function uploadImage(richMenuId, imageUrl) {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${required('LINE_CHANNEL_ACCESS_TOKEN')}`,
-      'content-type': 'image/jpg'
+      'content-type': 'image/jpeg'
     },
     body: bytes
   });
