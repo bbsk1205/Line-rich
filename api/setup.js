@@ -132,8 +132,12 @@ export default async function handler(req, res) {
           action: uri('マイページ', 'URL_MYPAGE')
         },
         {
-        bounds: { x:0, y:1540, width:1250, height:146 },
+        bounds: { x:0, y:1500, width:1300, height:186 },
         action: uri('HEY HATCH', 'URL_HOME')
+        },
+        {
+        bounds: { x:1980, y:1480, width:320, height:206 },
+        action: uri('Instagram', 'URL_INSTAGRAM')
         }
       ]
     };
