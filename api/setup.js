@@ -116,6 +116,10 @@ export default async function handler(req, res) {
           action: switchMenu('サービス一覧', SERVICES_ALIAS, 'switch-to-services')
         },
         {
+          bounds: { x: 650, y: 20, width: 1200, height: 260 },
+          action: uri('ホーム', 'URL_HOME')
+        },
+        {
           bounds: {x:0, y:820, width:833, height:720},
           action: uri('レッスンを探す', 'URL_LESSONS')
         },
@@ -126,6 +130,10 @@ export default async function handler(req, res) {
         {
           bounds: {x:1667, y:820, width:833, height:720},
           action: uri('マイページ', 'URL_MYPAGE')
+        },
+        {
+        bounds: { x:0, y:1540, width:1250, height:146 },
+        action: uri('HEY HATCH', 'URL_HOME')
         }
       ]
     };
@@ -163,6 +171,14 @@ export default async function handler(req, res) {
         {
           bounds: {x:1667, y:940, width:833, height:590},
           action: uri('サービス紹介', 'URL_SERVICES')
+        },
+        {
+        bounds: { x:0, y:1540, width:1250, height:146 },
+        action: uri('HEY HATCH', 'URL_HOME')
+        },
+        {
+        bounds: { x:2140, y:1520, width:250, height:166 },
+        action: uri('Instagram', 'URL_INSTAGRAM')
         }
       ]
     };
