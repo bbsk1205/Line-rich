@@ -116,7 +116,7 @@ export default async function handler(req, res) {
           action: switchMenu('サービス一覧', SERVICES_ALIAS, 'switch-to-services')
         },
         {
-          bounds: { x: 350, y: 20, width: 1800, height: 260 },
+          bounds: { x: 350, y: 180, width: 1800, height: 300 },
           action: uri('ホーム', 'URL_HOME')
         },
         {
